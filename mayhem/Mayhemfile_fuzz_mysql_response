@@ -1,0 +1,10 @@
+# seed-from: https://app.mayhem.security/savantenvs/workflow/fuzz-mysql-response
+project: savantenvs/workflow
+target: fuzz_mysql_response-mined-9df9330
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_mysql_response-mined-9df9330/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_mysql_response
+    libfuzzer: true
+    timeout: 30
