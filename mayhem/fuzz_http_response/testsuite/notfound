@@ -1,0 +1,4 @@
+HTTP/1.0 404 Not Found
+Server: wf
+Set-Cookie: a=b; Path=/
+

@@ -1,0 +1,1 @@
+mysql://root:pass@127.0.0.1:3306/db?character_set=utf8&character_set_results=utf8

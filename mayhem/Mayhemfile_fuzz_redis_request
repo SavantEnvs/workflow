@@ -1,0 +1,9 @@
+project: savantenvs/workflow
+target: fuzz_redis_request
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_redis_request/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_redis_request
+    libfuzzer: true
+    timeout: 30
